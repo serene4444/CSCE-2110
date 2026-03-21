@@ -1,18 +1,43 @@
-Name: Serene Plummer
-Course: CSCE 2110
-Assignment: Lab 2
+# Singly Linked List in C++
 
-Files Included:
-- LinkedList.h
-- LinkedList.cpp
-- main.cpp
+- Name: Serene Plummer
+- Course: CSCE 2110
+- Assignment: Lab 3
 
-Description:
-This program implements a singly linked list in C++. It supports:
-- Insert at beginning
-- Insert at end
-- Delete a value
-- Search for a value
-- Display the list
+## Files Included
+- `LinkedList.h`
+- `LinkedList.cpp`
+- `main.cpp`
 
-The program demonstrates dynamic memory allocation and pointer manipulation.
+## Project Description
+This project implements a singly linked list in C++ using dynamic memory allocation and pointer manipulation.
+
+## Implemented Operations
+- Insert at beginning: `insertAtBeginning(int value)`
+- Insert at end: `insertAtEnd(int value)`
+- Insert at position: `insertAtPosition(int value, int position)`
+- Delete by value: `deleteNode(int value)`
+- Search by value: `search(int value)`
+- Display list: `display()`
+- Get list length: `length()`
+- Reverse list: `reverse()`
+
+## What `main.cpp` Demonstrates
+- Builds an initial list
+- Prints the list and its length
+- Inserts a value at a specific position
+- Searches for present and missing values
+- Reverses the list and prints updated results
+
+## How to Compile and Run
+From the project folder, compile with:
+
+```bash
+g++ main.cpp LinkedList.cpp -o linkedlist
+```
+
+Run the program:
+
+```bash
+./linkedlist
+```
