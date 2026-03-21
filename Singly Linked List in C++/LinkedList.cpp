@@ -12,9 +12,9 @@ LinkedList::LinkedList() : head(nullptr) {}
 LinkedList::~LinkedList() {
     Node* current = head;
     while (current != nullptr) {
-        Node* temp = current->next;
-        delete temp;
-        current = temp;
+        Node* next = current->next;
+        delete current;
+        current = next;
     }
 }
 
@@ -96,7 +96,7 @@ void LinkedList::deleteNode(int value) {
 }
 
 //Search for a value in the list, return true if found, false otherwise
-bool LinkedList::search(int value){
+bool LinkedList::search(int value) const {
     Node* current = head;
     while (current != nullptr){
         if (current->data == value){
